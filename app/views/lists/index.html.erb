@@ -1,0 +1,11 @@
+<h1>Save Your Movies</h1>
+
+
+<h3>My Lists</h3>
+<%= link_to "Create a movie list", new_list_path %>
+
+<% @lists.each do |list| %>
+  <%= link_to list_path(list) do %>
+    <%= list.name %>
+  <% end %>
+<% end %>
