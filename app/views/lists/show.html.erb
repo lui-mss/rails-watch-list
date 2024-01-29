@@ -1,5 +1,4 @@
-<h1><%= @list.name %></h1><span><%= pluralize(@list.movies.size, "movie") %></span>
-
+<h1><%= @list.name %></h1>
 
 <% if @list.movies.empty? %>
   <small><em><%= "You haven't saved any movies yet!" %></em></small>
